@@ -1,4 +1,4 @@
-﻿#include "AEROFLOT.h"
+#include "AEROFLOT.h"
 #include "Myarr.h"
 #include <iostream>
 #include <fstream>
