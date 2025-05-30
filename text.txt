@@ -1,0 +1,8 @@
+7
+London	101	Boeing
+Paris	1	Airbus 
+NY		303 Boeing
+Berlin	404	Embraer
+Tokyo	505	Boeing
+Moscow	606	Airbus
+Dubai	707	Boeing
