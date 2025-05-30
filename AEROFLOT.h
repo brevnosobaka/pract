@@ -1,4 +1,4 @@
-//////Класс для хранения и обработки данных об авиарейсах///////
+//////РљР»Р°СЃСЃ РґР»СЏ С…СЂР°РЅРµРЅРёСЏ Рё РѕР±СЂР°Р±РѕС‚РєРё РґР°РЅРЅС‹С… РѕР± Р°РІРёР°СЂРµР№СЃР°С…///////
 #pragma once
 #include <iostream>
 #include <fstream>
@@ -11,23 +11,23 @@ const int a = 7;
 class AEROFLOT 
 {
 public: 
-    /////Структура//////////////////////////////////////
-    char destination[20] = "";                          // Пункт назначения
-    int flight_number = 0;                              // Номер рейса
-    char paircraft_type[10] = "";                       // Тип самолета
-    /////Конструкторы///////////////////////////////////
-    AEROFLOT();                                                  // Конструктор по умолчанию обнуляет поля
-    AEROFLOT(const char* n, int f, const char* p);               // Параметр
-    AEROFLOT(const AEROFLOT& m);                                 // Конструктор копирования
-    /////Методы сравнения///////////////////////////////
-    static bool compNumber(AEROFLOT& a, AEROFLOT& b);       // Сравнение по номеру
-    static bool compDestination(AEROFLOT& a, AEROFLOT& b);  // Сравнение по пункту
-    bool operator==(const AEROFLOT& w) const;               // Оператор равенства // Проверка равенства всех полей
-    bool operator<(const AEROFLOT& m);                      // Оператор меньше
-    bool operator>(const AEROFLOT& m);                      // Оператор больше
+    /////РЎС‚СЂСѓРєС‚СѓСЂР°//////////////////////////////////////
+    char destination[20] = "";                          // РџСѓРЅРєС‚ РЅР°Р·РЅР°С‡РµРЅРёСЏ
+    int flight_number = 0;                              // РќРѕРјРµСЂ СЂРµР№СЃР°
+    char paircraft_type[10] = "";                       // РўРёРї СЃР°РјРѕР»РµС‚Р°
+    /////РљРѕРЅСЃС‚СЂСѓРєС‚РѕСЂС‹///////////////////////////////////
+    AEROFLOT();                                                  // РљРѕРЅСЃС‚СЂСѓРєС‚РѕСЂ РїРѕ СѓРјРѕР»С‡Р°РЅРёСЋ РѕР±РЅСѓР»СЏРµС‚ РїРѕР»СЏ
+    AEROFLOT(const char* n, int f, const char* p);               // РџР°СЂР°РјРµС‚СЂ
+    AEROFLOT(const AEROFLOT& m);                                 // РљРѕРЅСЃС‚СЂСѓРєС‚РѕСЂ РєРѕРїРёСЂРѕРІР°РЅРёСЏ
+    /////РњРµС‚РѕРґС‹ СЃСЂР°РІРЅРµРЅРёСЏ///////////////////////////////
+    static bool compNumber(AEROFLOT& a, AEROFLOT& b);       // РЎСЂР°РІРЅРµРЅРёРµ РїРѕ РЅРѕРјРµСЂСѓ
+    static bool compDestination(AEROFLOT& a, AEROFLOT& b);  // РЎСЂР°РІРЅРµРЅРёРµ РїРѕ РїСѓРЅРєС‚Сѓ
+    bool operator==(const AEROFLOT& w) const;               // РћРїРµСЂР°С‚РѕСЂ СЂР°РІРµРЅСЃС‚РІР° // РџСЂРѕРІРµСЂРєР° СЂР°РІРµРЅСЃС‚РІР° РІСЃРµС… РїРѕР»РµР№
+    bool operator<(const AEROFLOT& m);                      // РћРїРµСЂР°С‚РѕСЂ РјРµРЅСЊС€Рµ
+    bool operator>(const AEROFLOT& m);                      // РћРїРµСЂР°С‚РѕСЂ Р±РѕР»СЊС€Рµ
     
-   /////Операторы ввода/вывода/////////////////////////
-    friend ostream& operator<<(ostream& os, const AEROFLOT& m);     // Вывод
-    friend istream& operator>>(istream& is, AEROFLOT& m);           // Ввод // Чтение из потока
+   /////РћРїРµСЂР°С‚РѕСЂС‹ РІРІРѕРґР°/РІС‹РІРѕРґР°/////////////////////////
+    friend ostream& operator<<(ostream& os, const AEROFLOT& m);     // Р’С‹РІРѕРґ
+    friend istream& operator>>(istream& is, AEROFLOT& m);           // Р’РІРѕРґ // Р§С‚РµРЅРёРµ РёР· РїРѕС‚РѕРєР°
   
 };
