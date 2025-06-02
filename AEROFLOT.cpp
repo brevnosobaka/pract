@@ -1,3 +1,4 @@
+///AEROFLOT.cpp//
 #include "AEROFLOT.h"
 AEROFLOT::AEROFLOT() : flight_number(0) {
     strcpy_s(destination, "");
